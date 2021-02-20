@@ -32,8 +32,6 @@ def LoginTwitter(username,password,tkWindow):
     browser = webdriver.Firefox()
     browser.get("https://twitter.com/login")
     browser.implicitly_wait(2)
-    #username="taha.mucasiroglu@gmail.com"
-    #password="*Basket*67"
     browser.find_element_by_xpath('//*[@id="react-root"]/div/div/div[2]/main/div/div/div[2]/form/div/div[1]/label/div/div[2]/div/input').send_keys(username)
     browser.find_element_by_xpath('//*[@id="react-root"]/div/div/div[2]/main/div/div/div[2]/form/div/div[2]/label/div/div[2]/div/input').send_keys(password)
     sleep(0.5)
@@ -55,14 +53,6 @@ def LoginTwitter(username,password,tkWindow):
     counter=1
     counter=WriteTXT(elements,counter)
     browser.close()
-
-
-    
-
-
-
-
-
 GetInfo()
 
 
